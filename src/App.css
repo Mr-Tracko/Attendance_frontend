@@ -7,6 +7,11 @@
   @apply px-4 py-2 bg-white text-indigo-700 font-medium rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
 }
 
+nav, header {
+  position: relative;
+  z-index: 50;
+}
+
 /* Custom animation for notifications */
 @keyframes pulse {
   0%, 100% {
