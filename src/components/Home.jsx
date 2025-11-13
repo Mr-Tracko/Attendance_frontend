@@ -4,6 +4,7 @@ import Shuffle from './ui/Shuffle';
 import GradientText from './ui/GradientText'
 import ElectricBorder from './ui/ElectricBorder'
 
+
 function Home() {
   // Simulate navigate function since react-router-dom isn't available in this environment
   const navigate = useNavigate();
