@@ -1,19 +1,21 @@
+import Footer from './Footer';
 function Dashboard() {
-    // Sample data
-    const attendanceStats = {
-      present: 85,
-      absent: 10,
-      late: 5
-    };
-    
-    const recentActivity = [
-      { id: 1, name: 'John Doe', status: 'Present', time: '09:00 AM', date: 'Today' },
-      { id: 2, name: 'Jane Smith', status: 'Late', time: '09:15 AM', date: 'Today' },
-      { id: 3, name: 'Mike Johnson', status: 'Absent', time: '-', date: 'Today' },
-      { id: 4, name: 'Sarah Williams', status: 'Present', time: '08:55 AM', date: 'Today' }
-    ];
-  
-    return (
+  // Sample data
+  const attendanceStats = {
+    present: 85,
+    absent: 10,
+    late: 5
+  };
+
+  const recentActivity = [
+    { id: 1, name: 'John Doe', status: 'Present', time: '09:00 AM', date: 'Today' },
+    { id: 2, name: 'Jane Smith', status: 'Late', time: '09:15 AM', date: 'Today' },
+    { id: 3, name: 'Mike Johnson', status: 'Absent', time: '-', date: 'Today' },
+    { id: 4, name: 'Sarah Williams', status: 'Present', time: '08:55 AM', date: 'Today' }
+  ];
+
+  return (
+    <>
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         {/* Hero section */}
         <div className="hero-pattern rounded-lg shadow-md mb-8">
@@ -37,7 +39,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
-  
+
         {/* Stats section */}
         <div className="mb-8">
           <h2 className="text-gray-700 text-2xl font-semibold mb-4">Today's Overview</h2>
@@ -59,7 +61,7 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-  
+
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="px-4 py-5 sm:p-6">
                 <div className="flex items-center">
@@ -77,7 +79,7 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-  
+
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="px-4 py-5 sm:p-6">
                 <div className="flex items-center">
@@ -97,7 +99,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
-  
+
         {/* Recent activity */}
         <div className="bg-white shadow rounded-lg mb-8">
           <div className="px-4 py-5 sm:px-6">
@@ -123,9 +125,9 @@ function Dashboard() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
-                          ${person.status === 'Present' ? 'bg-green-100 text-green-800' : 
-                            person.status === 'Late' ? 'bg-yellow-100 text-yellow-800' : 
-                            'bg-red-100 text-red-800'}`}>
+                          ${person.status === 'Present' ? 'bg-green-100 text-green-800' :
+                            person.status === 'Late' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-red-100 text-red-800'}`}>
                           {person.status}
                         </span>
                       </td>
@@ -138,7 +140,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
-  
+
         {/* Features section */}
         <div className="mb-8">
           <h2 className="text-gray-700 text-2xl font-semibold mb-4">Key Features</h2>
@@ -159,7 +161,7 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-  
+
             {/* Feature 2 */}
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="p-6">
@@ -176,7 +178,7 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-  
+
             {/* Feature 3 */}
             <div className="bg-white overflow-hidden shadow rounded-lg">
               <div className="p-6">
@@ -196,7 +198,9 @@ function Dashboard() {
           </div>
         </div>
       </div>
-    );
-  }
-  
-  export default Dashboard;
+      <Footer />
+    </>
+  );
+}
+
+export default Dashboard;

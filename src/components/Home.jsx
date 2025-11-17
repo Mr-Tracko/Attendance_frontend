@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import Shuffle from './ui/Shuffle';
 import GradientText from './ui/GradientText'
 import ElectricBorder from './ui/ElectricBorder'
-
+import Footer from './Footer'
+import GlareHover from './ui/GlareHover'
 
 function Home() {
-  // Simulate navigate function since react-router-dom isn't available in this environment
   const navigate = useNavigate();
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -465,6 +465,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
