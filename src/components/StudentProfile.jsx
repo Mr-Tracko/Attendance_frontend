@@ -545,7 +545,7 @@ const StudentProfile = () => {
         try {
             setLoading(true);
             setError(null);
-            const response = await fetch(`http://localhost:5000/api/student-attendance/${studentData.rollNo}`);
+            const response = await fetch(`https://attendance-backend-yqrj.onrender.com/api/student-attendance/${studentData.rollNo}`);
             
             if (!response.ok) {
                 throw new Error('Failed to fetch attendance data');

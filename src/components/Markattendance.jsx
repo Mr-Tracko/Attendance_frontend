@@ -46,7 +46,7 @@ function MarkAttendance() {
     }));
 
     try {
-      const res = await fetch("http://localhost:5000/api/mark-attendance", {
+      const res = await fetch("https://attendance-backend-yqrj.onrender.com/api/mark-attendance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
