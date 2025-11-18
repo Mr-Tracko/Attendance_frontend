@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Admin from './components/Admin';
 import MarkAttendance from './components/Markattendance';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
 import Home from "./components/Home";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/student" element={<StudentProfile />} />
           <Route path="/history" element={<History />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home navigate={setPage} />} />
         </Routes>
       </main>

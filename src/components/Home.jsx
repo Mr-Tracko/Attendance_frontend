@@ -154,13 +154,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
 
-            <ElectricBorder
-              color="#7df9ff"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{ borderRadius: 16 }}
-            >
+            <div className="border solid rounded-lg  border-white ">
               <div
                 className={` p-6 rounded-lg shadow-md transition-all duration-700 ease-out transform ${visibleSections.features ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-20 scale-95'}`}
                 onMouseEnter={() => setActiveFeature(0)}
@@ -174,17 +168,12 @@ function Home() {
                 <h3 className="text-xl font-bold mb-2 text-center text-white">Easy Attendance Marking</h3>
                 <p className="text-gray-400 text-center">Teachers can quickly mark attendance for entire classes with just a few clicks</p>
               </div>
-            </ElectricBorder>
+            </div>
 
 
             {/* Feature 2 */}
-            <ElectricBorder
-              color="#7df9ff"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{ borderRadius: 16 }}
-            >
+            
+            <div className="border solid rounded-lg  border-white ">
               <div
                 className={` border-gray-900 p-6 rounded-lg shadow-md transition-all duration-700 ease-out delay-100 transform ${visibleSections.features ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-20 scale-95'}`}
                 onMouseEnter={() => setActiveFeature(1)}
@@ -198,18 +187,12 @@ function Home() {
                 <h3 className="text-xl font-bold mb-2 text-center text-white">Student Self-Tracking</h3>
                 <p className="text-gray-400 text-center">Students can monitor their own attendance records and receive alerts about attendance issues</p>
               </div>
-            </ElectricBorder>
+            </div>
 
 
             {/* Feature 3 */}
-            <ElectricBorder
-              color="#7df9ff"
-              speed={1}
-              chaos={0.5}
-              thickness={2}
-              style={{ borderRadius: 16 }}
-            >
-              <div
+              <div className="border border-white solid rounded-lg">
+                <div
                 className={` border-gray-900 p-6 rounded-lg shadow-md transition-all duration-700 ease-out delay-200 transform ${visibleSections.features ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-20 scale-95'}`}
                 onMouseEnter={() => setActiveFeature(2)}
                 onMouseLeave={() => setActiveFeature(null)}
@@ -222,7 +205,7 @@ function Home() {
                 <h3 className="text-xl font-bold mb-2 text-center text-white">Visual Analytics</h3>
                 <p className="text-gray-400 text-center">Comprehensive dashboards provide insights into attendance patterns and trends</p>
               </div>
-            </ElectricBorder>
+              </div>
 
           </div>
         </div>
